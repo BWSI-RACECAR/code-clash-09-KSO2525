@@ -31,6 +31,7 @@ class Solution:
         num = 0
         # TODO: Write code below to return an int with the solution to the prompt
         for i in range(len(str)):
+            print(i)
             if str[i] == ".":
                 if i < 3:
                     alph += 1
