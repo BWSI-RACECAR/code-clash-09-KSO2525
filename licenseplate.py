@@ -40,7 +40,7 @@ class Solution:
         if num != 0:
             temp = 10-(4-num)
             for i in range(num):
-                print(temp)
+                #print(temp)
                 comb = comb * temp
                 temp = temp - 1
         print(comb)
