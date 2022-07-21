@@ -31,15 +31,16 @@ class Solution:
         num = 0
         # TODO: Write code below to return an int with the solution to the prompt
         for i in range(len(str)):
-            print(i)
+            #print(i)
             if str[i] == ".":
                 if i < 3:
                     alph += 1
-                elif i >= 3:
+                if i >= 3:
                     num += 1
         if num != 0:
             temp = 10-(4-num)
             for i in range(num):
+                print(temp)
                 comb = comb * temp
                 temp = temp - 1
         if alph != 0:
