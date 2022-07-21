@@ -30,24 +30,16 @@ class Solution:
         alph = 0
         num = 0
         # TODO: Write code below to return an int with the solution to the prompt
-        for i in range(len(str)):
-            #print(i)
-            if str[i] == ".":
-                if i < 3:
-                    alph += 1
-                if i >= 3:
-                    num += 1
-        if alph != 0:
-            temp = 10-(3-alph)
-            for i in range(alph):
-                comb = comb * temp
-                temp = temp - 1
-        if num != 0:
-            temp = 10-(4-num)
-            for i in range(num):
-                #print(temp)
-                comb = comb * temp
-                temp = temp - 1
+        for i in range(0, 3):
+            if (str[i] == "."):
+                alph += 1
+        for i in range(3, 7):
+            if (str[i] == "."):
+                num += 1
+        for i in range(24, 24+alph):
+            comb *= i
+        for i in range(7, 7+num):
+            comb *= i
         return comb
 
                     
