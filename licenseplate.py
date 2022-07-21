@@ -39,12 +39,12 @@ class Solution:
         if num != 4:
             temp = 10-(4-num)
             for i in range(num):
-                comb *= temp
+                comb = comb * temp
                 temp -= 1
         if alph != 3:
             temp = 10-(3-alph)
             for i in range(alph):
-                comb *= temp
+                comb = comb * temp
                 temp -= 1
         return comb
 
