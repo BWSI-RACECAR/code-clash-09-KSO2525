@@ -26,7 +26,7 @@ class Solution:
     def licensePlate(self,str):
         # type str: string
         # return: int
-        comb = 0
+        comb = 1
         alph = 0
         num = 0
         # TODO: Write code below to return an int with the solution to the prompt
@@ -41,7 +41,6 @@ class Solution:
             for i in range(num):
                 comb *= temp
                 temp -= 1
-            comb = (10-num)
         if alph != 3:
             temp = 10-(3-alph)
             for i in range(alph):
