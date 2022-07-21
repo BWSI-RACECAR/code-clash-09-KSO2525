@@ -42,6 +42,7 @@ class Solution:
             comb = (10-num) 
         if alph != 0:
             comb = comb * (26-alph)
+        return comb
 
                     
 
