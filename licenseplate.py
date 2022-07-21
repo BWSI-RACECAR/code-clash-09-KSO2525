@@ -38,8 +38,7 @@ class Solution:
                     num += 1
         num = 4 - num
         alph = 3 - alph
-        comb = (10-num) 
-        comb = comb * (26-alph)
+        comb = (10-num) * (26-alph)
         return comb
 
                     
