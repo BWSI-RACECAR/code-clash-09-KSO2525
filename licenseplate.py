@@ -41,7 +41,7 @@ class Solution:
         if num != 4:
             comb = (10-num)
         if alph != 3:
-            (26-alph)
+            comb *= (26-alph)
         return comb
 
                     
