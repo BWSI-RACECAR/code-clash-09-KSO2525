@@ -36,14 +36,16 @@ class Solution:
                     alph += 1
                 elif i >= 3:
                     num += 1
-        temp = 10-(4-num)
-        for i in range(num):
-            comb = comb * temp
-            temp -= 1
-        temp = 10-(3-alph)
-        for i in range(alph):
-            comb = comb * temp
-            temp -= 1
+        if num != 0:
+            temp = 10-(4-num)
+            for i in range(num):
+                comb = comb * temp
+                temp -= 1
+        if alph != 0:
+            temp = 10-(3-alph)
+            for i in range(alph):
+                comb = comb * temp
+                temp -= 1
         return comb
 
                     
