@@ -43,6 +43,7 @@ class Solution:
                 print(temp)
                 comb = comb * temp
                 temp = temp - 1
+        print(comb)
         if alph != 0:
             temp = 10-(3-alph)
             for i in range(alph):
